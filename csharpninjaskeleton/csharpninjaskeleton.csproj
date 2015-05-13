@@ -54,7 +54,7 @@
     <Compile Include="Classes\Log.cs" />
     <Compile Include="CompositionRoot.cs" />
     <Compile Include="Interfaces\IReadCsv.cs" />
-    <Compile Include="LaserAndCrmAddressAnalysis.cs" />
+    <Compile Include="csharpninjaskeleton.cs" />
     <Compile Include="Interfaces\IApp.cs" />
     <Compile Include="Interfaces\ILog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
