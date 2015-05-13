@@ -2,7 +2,7 @@
 {
     using Interfaces;
 
-    class LaserAndCrmAddressAnalysis
+    class Csharpninjaskeleton
     {
         static void Main(string[] args)
         {
