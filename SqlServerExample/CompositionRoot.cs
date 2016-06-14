@@ -1,4 +1,4 @@
-﻿namespace LaserAndCrmAddressAnalysis
+﻿namespace SqlServerExample
 {
     using Ninject;
     using Ninject.Modules;

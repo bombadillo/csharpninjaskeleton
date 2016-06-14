@@ -7,8 +7,8 @@
     <ProjectGuid>{91BCD5B5-68C1-4648-84FB-7E7993615254}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LaserAndCrmAddressAnalysis</RootNamespace>
-    <AssemblyName>LaserAndCrmAddressAnalysis</AssemblyName>
+    <RootNamespace>SqlServerExample</RootNamespace>
+    <AssemblyName>SqlServerExample</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=1.40.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.42\lib\net45\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Ninject">
       <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
     </Reference>
@@ -50,16 +54,26 @@
   <ItemGroup>
     <Compile Include="ApplicationModule.cs" />
     <Compile Include="Classes\App.cs" />
-    <Compile Include="Classes\CsvReader.cs" />
+    <Compile Include="Classes\DbConnectionHandler.cs" />
+    <Compile Include="Classes\DbHandler.cs" />
+    <Compile Include="Classes\FileReader.cs" />
     <Compile Include="Classes\Log.cs" />
+    <Compile Include="Classes\SqlLoader.cs" />
     <Compile Include="CompositionRoot.cs" />
-    <Compile Include="Interfaces\IReadCsv.cs" />
-    <Compile Include="csharpninjaskeleton.cs" />
+    <Compile Include="Interfaces\IHandleDb.cs" />
+    <Compile Include="Interfaces\IHandleDbConnection.cs" />
+    <Compile Include="Interfaces\ILoadSql.cs" />
+    <Compile Include="Interfaces\IReadFiles.cs" />
+    <Compile Include="Models\Test.cs" />
+    <Compile Include="SqlServerExample.cs" />
     <Compile Include="Interfaces\IApp.cs" />
     <Compile Include="Interfaces\ILog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Sql\test.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
@@ -71,9 +85,7 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

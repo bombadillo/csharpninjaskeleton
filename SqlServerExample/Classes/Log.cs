@@ -1,4 +1,4 @@
-﻿namespace LaserAndCrmAddressAnalysis.Classes
+﻿namespace SqlServerExample.Classes
 {
     using NLog;
     using Interfaces;

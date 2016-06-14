@@ -1,8 +1,8 @@
-﻿namespace LaserAndCrmAddressAnalysis
+﻿namespace SqlServerExample
 {
     using Interfaces;
 
-    class Csharpninjaskeleton
+    class SqlServerExample
     {
         static void Main(string[] args)
         {

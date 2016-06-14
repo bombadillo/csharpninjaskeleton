@@ -1,4 +1,4 @@
-﻿namespace LaserAndCrmAddressAnalysis
+﻿namespace SqlServerExample
 {
     using Ninject.Modules;
     using NLog;
@@ -16,7 +16,10 @@
                 var log = (ILog)LogManager.GetLogger(scope, typeof(Log));
                 return log;
             });
-            Bind(typeof (IReadCsv)).To(typeof (CsvReader));
+            Bind(typeof(IHandleDbConnection)).To(typeof(DbConnectionHandler));
+            Bind(typeof(IHandleDb<>)).To(typeof(DbHandler<>));
+            Bind(typeof(ILoadSql)).To(typeof(SqlLoader));
+            Bind(typeof(IReadFiles)).To(typeof(FileReader));
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace LaserAndCrmAddressAnalysis.Interfaces
+﻿namespace SqlServerExample.Interfaces
 {
     public interface IApp
     {
