@@ -50,10 +50,8 @@
   <ItemGroup>
     <Compile Include="ApplicationModule.cs" />
     <Compile Include="Classes\App.cs" />
-    <Compile Include="Classes\CsvReader.cs" />
     <Compile Include="Classes\Log.cs" />
     <Compile Include="CompositionRoot.cs" />
-    <Compile Include="Interfaces\IReadCsv.cs" />
     <Compile Include="csharpninjaskeleton.cs" />
     <Compile Include="Interfaces\IApp.cs" />
     <Compile Include="Interfaces\ILog.cs" />

@@ -16,7 +16,6 @@
                 var log = (ILog)LogManager.GetLogger(scope, typeof(Log));
                 return log;
             });
-            Bind(typeof (IReadCsv)).To(typeof (CsvReader));
         }
     }
 }
