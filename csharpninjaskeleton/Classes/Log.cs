@@ -1,4 +1,4 @@
-﻿namespace LaserAndCrmAddressAnalysis.Classes
+﻿namespace CsharpNinjaSkeleton.Classes
 {
     using NLog;
     using Interfaces;

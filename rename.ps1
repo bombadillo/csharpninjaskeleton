@@ -7,7 +7,7 @@ if (!$projectName) {
     exit
 }
 
-$textToFind = "(LaserAndCrmAddressAnalysis|csharpninjaskeleton)"
+$textToFind = "(CsharpNinjaSkeleton|csharpninjaskeleton)"
 $projectSolutionName = "csharpninjaskeleton"
 $include = @("*.cs", "*.config", "*.csproj")
 $projectFiles = Get-ChildItem 'csharpninjaskeleton\*' -Recurse -Include $include -Exclude $exclude | ?{ $_.fullname -notmatch "\\obj\\|\\bin\\?" }

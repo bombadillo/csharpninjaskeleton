@@ -7,8 +7,8 @@
     <ProjectGuid>{91BCD5B5-68C1-4648-84FB-7E7993615254}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LaserAndCrmAddressAnalysis</RootNamespace>
-    <AssemblyName>LaserAndCrmAddressAnalysis</AssemblyName>
+    <RootNamespace>CsharpNinjaSkeleton</RootNamespace>
+    <AssemblyName>CsharpNinjaSkeleton</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

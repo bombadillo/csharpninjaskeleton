@@ -1,4 +1,4 @@
-﻿namespace LaserAndCrmAddressAnalysis.Interfaces
+﻿namespace CsharpNinjaSkeleton.Interfaces
 {
     public interface IApp
     {

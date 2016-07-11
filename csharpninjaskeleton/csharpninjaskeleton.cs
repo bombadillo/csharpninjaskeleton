@@ -1,4 +1,4 @@
-﻿namespace LaserAndCrmAddressAnalysis
+﻿namespace CsharpNinjaSkeleton
 {
     using Interfaces;
 
